@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>রেজিস্টার ফরম</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('your-background-image.jpg'); /* এখানে আপনার ব্যাকগ্রাউন্ড ছবি দিন */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(10px); /* ব্যাকগ্রাউন্ডকে ব্লার করা হয়েছে */
+        }
+
+        .form-container {
+            background: rgba(255, 255, 255, 0.7); /* ফর্মের ব্যাকগ্রাউন্ড হালকা সাদা */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"], input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .form-footer {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>রেজিস্টার করুন</h2>
+            <form action="#" method="POST">
+                <label for="username">ব্যবহারকারীর নাম</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="email">ইমেইল</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">পাসওয়ার্ড</label>
+                <input type="password" id="password" name="password" required>
+
+                <input type="submit" value="রেজিস্টার করুন">
+            </form>
+
+            <div class="form-footer">
+                <p>আপনার কি ইতিমধ্যে অ্যাকাউন্ট আছে? <a href="#">লগ ইন করুন</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
